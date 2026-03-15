@@ -320,6 +320,13 @@ textarea {
   align-items: center;
   min-height: min(100cqi, 85vh);
   padding-inline: var(--page-side-space);
+  padding-block: 2rem;
+}
+
+@media (width > 36rem) {
+  .hero {
+    padding-block: 0;
+  }
 }
 
 .hero::after {
@@ -350,7 +357,13 @@ textarea {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-block: min(4rem, 10vmin) min(5rem);
+  padding-block: 2.5rem 3.5rem;
+}
+
+@media (width > 36rem) {
+  .hero-wrapper {
+    padding-block: min(4rem, 10vmin) min(5rem);
+  }
 }
 
 .hero-text {
@@ -358,11 +371,12 @@ textarea {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  max-width: 36rem;
+  max-width: 50rem;
   width: 100%;
   margin-inline: auto;
   position: relative;
   gap: 0;
+  margin-top: 100px;
 }
 
 .hero-label {
@@ -372,21 +386,21 @@ textarea {
   text-transform: uppercase;
   color: var(--accent-color);
   margin: 0;
-  padding-block-end: 1.25rem;
+  padding-block-end: 1.5rem;
   opacity: 0.95;
   order: 1;
 }
 
 .hero-text .hero-headline {
   margin: 0;
-  padding-block-end: 1.5rem;
+  padding-block-end: 1.75rem;
   order: 2;
-  line-height: 1.1;
+  line-height: 1.15;
 }
 
 .hero-text .hero-caption {
   margin: 0;
-  padding-block-end: 2rem;
+  padding-block-end: 2.25rem;
   max-width: 32ch;
   order: 3;
 }
@@ -409,6 +423,7 @@ textarea {
   }
   .hero-text .hero-headline {
     padding-block-end: 2rem;
+    line-height: 1.1;
   }
   .hero-text .hero-caption {
     padding-block-end: 2.5rem;
